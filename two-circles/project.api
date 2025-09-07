@@ -1,0 +1,25 @@
+# control.h task.h
+!control.cpp control.h graphics.h keys_n_colors.h #<#>
+!main.cpp control.h graphics.h keys_n_colors.h task.h #<#>
+!task.cpp control.h graphics.h keys_n_colors.h math.h task.h time.h #<#>
+ struct@Control _type_ #<control.h>
+ struct@point _type_ #<task.h>
+control_values : enum #<control.h>
+controls : Control[] #<control.cpp>
+count_cir #<task.cpp>
+create(int left, int top, int width, int height) -> void #<task.cpp>
+create(int, int, int, int) -> void #<task.h>
+create_control(int i, int left, int top, const char* file_name) -> void #<control.cpp>
+create_control(int, int, int, const char*) -> void #<control.h>
+dots : point[] #<task.cpp>
+main() -> int #<main.cpp>
+r : int[] #<task.cpp>
+save() -> void #<task.h>
+select_control() -> int #<control.h>
+solution() -> void #<task.h>
+	Control::left : int #<control.h>
+	Control::top : int #<control.h>
+	Control::right : int #<control.h>
+	Control::bottom : int #<control.h>
+	point::x : int #<task.h>
+	point::y : int #<task.h>
